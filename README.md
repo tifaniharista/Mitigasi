@@ -49,6 +49,8 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 - **[byte5](https://byte5.de)**
 - **[OP.GG](https://op.gg)**
 
+<img src="https://img.shields.io/packagist/l/laravel/framework" alt="License">
+
 ## Langkah Instalasi
 Ikuti langkah - langkah berikut untuk menjalankan aplikasi ini di lingkungan lokal Anda: 
 
