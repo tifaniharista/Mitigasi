@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## About Lara
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
@@ -49,17 +49,47 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 - **[byte5](https://byte5.de)**
 - **[OP.GG](https://op.gg)**
 
-## Contributing
+## Langkah Instalasi
+Ikuti langkah - langkah berikut untuk menjalankan aplikasi ini di lingkungan lokal Anda: 
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 1. Clone Repository
+Clone repository ini ke komputer Anda:
+```bash
+https://github.com/tifaniharista/Mitigasi.git
+```
+### 2. Masuk ke Direktori Proyek
+Pindah ke direktori proyek yang baru saja di-clone:
+```bash
+cd Mitigasi
+```
+### 3. Install Dependensi
+Install dependensi yang diperlukan menggunakan Composer:
+```bash
+composer install atau update composer
+```
+### 4. Konfigurasi Environment
+Salin file `.env.example` menjadi `.env` dan sesuaikan konfigurasi database serta pengaturan lainnya:
+```bash
+cp .env.example .env
+```
+### 5. Generate Kunci Aplikasi
+Jalankan perintah berikut untuk menghasilkan kunci aplikasi:
+```bash
+php artisan key:generate
+```
+### 6. Migrasi Database
+Lakukan migrasi database untuk membuat tabel yang diperlukan oleh aplikasi:
+```bash
+php artisan migrate
+php artisan db:seed
+php artisan db:seed --class=PermissionSeeder
+```
+### 7. Jalankan Aplikasi
+Terakhir, jalankan aplikasi menggunakan perintah berikut:
+```bash
+php artisan serve
+```
+Aplikasi sekarang dapat diakses melalui `http://localhost:8000`.
 
 ## License
 
